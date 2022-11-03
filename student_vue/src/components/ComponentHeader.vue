@@ -15,11 +15,11 @@
                 >
                     <el-menu-item v-for="item in noChildren()" :index="item.path" :key="item.path"
                     @click="clickMenu(item)">
-                    <span>{{item.label}}</span>
+                    <span class="fontSize">{{item.label}}</span>
                         </el-menu-item>
                 </el-menu>
                 <el-dropdown>
-                    <span class="el-dropdown-link">
+                    <span class="el-dropdown-link fontSize">
                     username
                     <img src="../../assets/logo.png" class="imageLogo" alt="">
                     <el-icon class="el-icon--right ">
@@ -28,7 +28,7 @@
                     </span>
                     <template #dropdown>
                     <el-dropdown-menu>
-                        <el-dropdown-item @click="handleLoginOut">退出登录</el-dropdown-item>
+                        <el-dropdown-item @click="handleLoginOut" class="fontSize">退出登录</el-dropdown-item>
                     </el-dropdown-menu>
                     </template>
                 </el-dropdown>
@@ -81,7 +81,15 @@ export default{
       .el-col{
           display: flex;
           place-items: center;
+          .el-dropdown{
+              margin-left:20px;
+          }
       }
   }
+}
+.fontSize{
+    font-size: 17px;
+    color:gray;
+    font-weight: 800;
 }
 </style>
