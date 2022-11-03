@@ -12,39 +12,14 @@ export default{
                         path:"/home",
                         name:"home",
                         label:"首页",
-                        icon:"House",
                         url:'home/Home',
                     },
                     {
-
-                    },
-                    {
-                        label:"学生管理",
-                        icon:"UserFilled",
-                        children:[
-                            {
-                                path:"/tea_admPublic/student",
-                                name:"student",
-                                label:"学生信息",
-                                icon:"Postcard",  //vue3中图标库
-                                url:'tea_admPublic/Student',
-                            },
-                            {
-                                path:"/tea_admPublic/examinationPaper_Score",
-                                name:"examinationPaper_Score",
-                                label:"考试记录",
-                                icon:"DocumentAdd",  //vue3中图标库
-                                url:'tea_admPublic/ExaminationPaper_Score',
-                            },
-                        ]
-                    },
-                    {
-                        path:"/tea_admPublic/personCenter",
-                        name:"personCenter",
-                        label:"个人中心",
-                        icon:"Setting",  
-                        url:'tea_admPublic/PersonCenter',
-                    },
+                        path:"/studyCenter",
+                        name:"studyCenter",
+                        label:"学习中心",
+                        url:'studyCenter/StudyCenter',
+                    }
                 ],
                 info:{
                     mainId:784231,
