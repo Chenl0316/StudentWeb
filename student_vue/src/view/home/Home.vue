@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        轮播
+        轮播1
     </div>
 </template>
 <style lang="less" scoped>
