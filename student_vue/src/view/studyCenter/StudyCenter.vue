@@ -7,7 +7,7 @@
                     学生信息
                 </div>
                 <div class="Info-bottom">
-                    其他信息1
+                    其他信息
                 </div>
             </el-col>
             <el-col :span="3"></el-col>
